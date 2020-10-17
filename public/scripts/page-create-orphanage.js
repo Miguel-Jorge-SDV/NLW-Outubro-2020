@@ -95,5 +95,15 @@ function toggleSelect(event) {
     // Verificar se é sim ou não
     input.value = button.dataset.value
 
-    // Pegar o botão clicado
+}
+
+function vaildate(event) {
+
+    // Validar se o lat e lnt estão preenchidos
+    const lat = true
+    const lng = true
+    if (lat == "0" && lng == "0") {
+        event.preventDefault()
+        alert('Selecione um ponto no mapa')
+    }
 }
